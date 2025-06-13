@@ -13,7 +13,7 @@
 
 <body class="xl:flex h-screen items-start justify-start bg-gray-100">
     <header class="xl:absolute top-0 left-0 w-full h-20 bg-transparent flex items-center justify-center z-10 text-white">
-        <h1 class="xl:text-3xl font-bold font-[Saira] mr-125">FurniShop</h1>
+        <h1 class="text-3xl font-bold font-[Saira] mr-125">FurniShop</h1>
         <ul class="xl:flex space-x-24 list-none">
             <li class= "text-white font-bold font-[Saira]">Home</li>
             <li class="text-white font-[Saira]">About</li>
@@ -23,16 +23,31 @@
     </header>
     <main>
         <div class="xl:relative">
-            <img src="./img/sala-mobilia.png" alt="imagem com sofa amarelo" class="w-[1440px] h-[900px] object-cover fixed top-0 left-0">
+            <img src="./img/sala-mobilia.png" 
+                alt="imagem com sofa amarelo"
+                class=" object-cover fixed top-0 left-0
+                w-[393px] h-[852px]
+                xl:w-[1440px] xl:h-[900px]
+                lg:w-[1024px] lg:h-[724px]">
         </div>
-        <h2 class="xl:text-7xl font-semibold font-[Saira] relative top-40 left-70 text-white text-center">Creative Home Simpify Your <br> Furniture</h2>
+
+        <h2 class="font-semibold font-[Saira] relative text-white text-center
+        xl:text-7xl xl:top-40 xl:left-70
+        lg:text-7xl">
+        Creative Home Simpify Your <br> Furniture
+        </h2>
+
         <h3 class="xl:text-[20px] font-[Saira] fixed top-96 left-110 text-white text-center">Do i have consent to record this meeting gain locaion, root-and-<br>branch, review, nor game plan who’s the goto</h3>
         <button class="xl:fixed top-[525px] left-1/2 -translate-x-1/2 px-23 py-5 text-white font-semibold font-[Saira] text-xl bg-white/40 backdrop-blur-md rounded-lg hover:bg-black/70 transition-colors">
             Shop Now
         </button>
 
-        <div class= "xl:fixed bottom-8 left-1/2 -translate-x-1/2 bg-[#286F6C] p-10 rounded-[30px] shadow-lg w-300 z-20 text-white">
-            <ul class="xl:flex space-x-35 list-none items-center  text-center text-1xl font-[Saira]">
+        <div class= "bg-[#286F6C] text-white
+        xl:p-10 xl:rounded-[30px] xl:shadow-lg xl:w-300 xl:h-40 xl:z-20 xl:fixed xl:bottom-8 xl:left-1/2 xl:-translate-x-1/2 
+        lg:p-10 lg:rounded-[30px] lg:shadow-lg lg:w-200 lg:h-135 lg:z-20 lg:fixed lg:bottom-20 lg:left-30 lg:-translate-x-2">
+            <ul class="list-none items-center text-center text-1xl font-[Saira]
+            xl:space-x-35 xl:flex
+            lg:space-x-5 flex-column">
                 <li class = "xl:border-r-1 pr-18 pl-10">
                    <span class = "text-4xl font-bold font-semibold"> 7 </span> <br> year experience</li>
                 <li class = "xl:border-r-1 pr-35 pl-0">
@@ -48,10 +63,21 @@
             <img src="./img/Pin.svg" class = "xl:fixed top-150 right-318" alt="ponto brilhante">
             <img src="./img/Pin.svg" class = "xl:fixed top-165 right-10" alt="ponto brilhante">
         </div>
+
+        <div class="relative">
+        <img src="./img/Rectangle 922.png" 
+        class="
+        xl:fixed xl:top-180 xl:right-0
+        lg:fixed lg:top-158 lg:z-19"
+        alt="gradiente branco">
     </main>
     
-    <footer class="relative">
-        <img src="./img/Rectangle 922.png" class="xl:fixed top-180 right-0" alt="gradiente branco">
+    <footer>
+        <img src="./img/Rectangle 925 (1).png"
+        alt="retangulo branco"
+        class = 
+        "xl:hidden
+        lg:fixed lg:z-10 lg:top-190">
     </footer>
 </body>
 </html>
