@@ -1,7 +1,6 @@
 # Furnishop
 
-
-Este é um projeto de uma landing page responsiva feita com **HTML5** e **Tailwind CSS**, com foco em design moderno para uma loja de móveis fictícia chamada **FurniShop**, para a entrega de atividade final do primeiro semestre do curso de Desenvolvimento de Sistemas.
+Este é um projeto de uma landing page responsiva feita com **HTML5** e **Tailwind CSS**, com foco em design moderno para uma loja de móveis fictícia chamada **FurniShop**, para a entrega da atividade final do primeiro semestre do curso de Desenvolvimento de Sistemas.
 
 ---
 
@@ -26,7 +25,7 @@ Este é um projeto de uma landing page responsiva feita com **HTML5** e **Tailwi
 
 ![versão mobile do projeto](./img/mobile.png)
 
-[link do figma](https://www.figma.com/design/qkxZ7EEgAz5ohLUegcg4gS/lima---FurniShop--Copy-?m=auto&t=dGLScsMG1NTYNMOv-1)
+[Figma FurniShop](https://www.figma.com/design/qkxZ7EEgAz5ohLUegcg4gS/lima---FurniShop--Copy-?m=auto&t=dGLScsMG1NTYNMOv-1)
 
 ---
 
@@ -58,5 +57,6 @@ Clique com o botão direito no index.html > Open with Live Server
 - Imagens em formato PNG/SVG
 
 ## Autora
-Feito com 💛 por Maria Cecília Pereira Jardim
+Feito com 💛 por Maria Cecilia
+
 **GitHub:** @mariacecilia-01
