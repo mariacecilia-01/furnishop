@@ -1,107 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>FurniShop</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Tailwind CDN correto -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Saira -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;300;400;600;700;900&display=swap" rel="stylesheet">
+
+  <title>FurniShop</title>
+
+  <style>
+    body {
+      font-family: 'Saira', sans-serif;
+    }
+  </style>
 </head>
 
 <body class="xl:flex h-screen items-start justify-start bg-gray-100">
-    <header class="xl:absolute top-0 left-0 w-full h-20 bg-transparent flex items-center justify-center z-10 text-white
-    lg:absolute top-0 left-16 w-full h-20 bg-transparent flex items-center justify-center z-10 text-white">
-        <h1 class="xl:text-3xl font-bold font-[Saira] mr-125
-        lg:text-3xl font-bold font-[Saira]"
-        >FurniShop</h1>
-        <ul class="xl:flex space-x-24 list-none
-        lg:flex space-x-8 list-none">
-            <li class= "text-white font-bold font-[Saira]">Home</li>
-            <li class="text-white font-[Saira]">About</li>
-            <li class="text-white font-[Saira]">Features</li>
-            <li class="text-white font-[Saira]">Contact</li>
-        </ul>
-    </header>
-    <main>
+
+  <!-- Header -->
+  <header class="absolute top-[8px] left-0 w-full h-auto flex flex-col items-center justify-center z-10 text-white
+  md:flex-row md:h-20 md:items-center md:justify-center">
+
+  <h1 class="text-3xl font-bold mb-4 md:mb-0 md:mr-[300px] xl:mr-[700px]">
+    FurniShop
+  </h1>
+
+  <ul class="flex flex-row space-x-8 md:space-x-8 xl:space-x-12 list-none">
+    <li class="font-bold">Home</li>
+    <li>About</li>
+    <li>Features</li>
+    <li>Contact</li>
+  </ul>
+</header>
+
+
+  
+
+  <main class="relative w-full">
+
+    <!-- mobile Image -->
+    <div class="xl:hidden lg:hidden">
+    <img src="./img/mobile-photo.png" alt="sofa amarelo mobile"
+        class="object-cover fixed top-0 left-0 w-full h-1/2">
+    </div>
+
+    <!-- Desktop Image -->
+    <div class="hidden xl:block">
+      <img src="./img/sala-mobilia.png" alt="imagem com sofa amarelo"
+        class="object-cover fixed top-0 left-0 w-[1440px] h-[900px]">
+    </div>
+
+    <!-- Tablet Image -->
+    <div class="hidden lg:block xl:hidden">
+        <img src="./img/tablet-img.png" alt="sofá amarelo"
+          class="object-cover fixed top-0 left-0 w-full h-1/2">
+      </div>
+      
+    <!-- Headline -->
+    <h2 class="fixed text-white text-center font-semibold text-4xl top-24 xl:text-7xl xl:top-48 xl:left-72 lg:text-6xl lg:top-36 lg:left-32">
+      Creative Home Simplify Your <br> Furniture
+    </h2>
+
+    <!-- Subheadline -->
+    <h3 class="fixed text-white text-center font-light text-lg  top-60 xl:text-2xl xl:top-[380px] xl:left-72 lg:text-xl lg:top-[310px] lg:left-36">
+      Do I have consent to record this meeting, gain location, root-and-branch, review,<br> nor game plan who’s the goto.
+    </h3>
+
+    <!-- Button -->
+    <button class="fixed text-white font-semibold text-xl bg-white/40 backdrop-blur-md rounded-lg hover:bg-black/70 transition-colors
+      px-6 py-3 top-[330px] left-[120px]
+      xl:top-[525px] xl:left-1/2 xl:-translate-x-1/2 xl:px-10 xl:py-4
+      lg:top-[440px] lg:left-[410px] lg:px-8 lg:py-3">
+      Shop Now
+    </button>
+
+        <!-- Decorative Pins -->
         <div class="relative">
-            <img src="./img/sofa-mobile.png"
-            alt="sofa amarelo mobile"
-            class="object-cover fixed top-0 left-0
-                w-[393px] h-[852px]
-                xl:hidden
-                lg:hidden">
-        </div>
+            <!-- Pin 1 -->
+            <img src="./img/Pin.svg"
+                 alt="ponto brilhante"
+                 class="
+                   fixed 
+                   top-40 right-10 hidden
+                   md:top-[265px] md:right-[910px] 
+                   xl:top-72 xl:right-[1350px] 
+                 ">
+          
+            <!-- Pin 2 -->
+            <img src="./img/Pin.svg"
+                 alt="ponto brilhante"
+                 class="
+                   fixed 
+                   top-80 right-8 hidden
+                   md:top-[500px] md:right-[850px]
+                   xl:top-[665px] xl:right-[1250px]
+                 ">
+          
+            <!-- Pin 3 -->
+            <img src="./img/Pin.svg"
+                 alt="ponto brilhante"
+                 class="
+                   fixed 
+                   top-[350px] right-6 hidden
+                   md:top-[530px] md:right-24
+                   xl:top-[650px] xl:right-10
+                 ">
+          </div>
 
-        <div class-desktop = "relative">
-            <img src="./img/sala-mobilia.png" 
-            alt="imagem com sofa amarelo"
-            class= "xl:object-cover xl:fixed xl:top-0 left-0
-            xl:w-[1440px] xl:h-[900px]">
-        </div>
+    <!-- Stats Box -->
+     <div class="fixed z-20 bg-[#286F6C] text-white p-6 rounded-2xl shadow-lg
+    bg-[#286F6C] text-white p-6 rounded-2xl shadow-lg fixed z-20 text-center
+    w-[90%] bottom-8 left-1/2 -translate-x-1/2
+    flex items-center justify-center
+    flex-col space-y-4
 
-        <div class-tablet="relative">
-            <img src="./img/tablet-img.png"
-            alt="sofá amarelo"
-            class="lg:object-cover fixed top-0 left-0
-            xl:hidden
-            lg:w-[1024px] lg:h-[724px]">
-        </div>
+    md:w-[850px] md:h-[660px] md:bottom-10 md:grid md:grid-cols-2 md:gap-y-8 md:gap-x-4
 
-        <h2 class="font-semibold font-[Saira] relative text-white text-center
-        xl:fixed xl:text-7xl xl:top-30 xl:left-10 xl:p-20
-        lg:fixed lg:text-7xl lg:top-25 lg:left-5 lg:p-10">
-        Creative Home Simpify Your Furniture
-        </h2>
+    xl:w-[1100px] xl:h-[150px] xl:bottom-8 xl:left-1/2 xl:-translate-x-1/2 xl:space-x-8 xl:flex xl:flex-row
+">
+    <ul class="flex flex-col items-center justify-center space-y-4
+    md:col-span-2 md:grid md:grid-cols-2 md:gap-y-20 md:gap-x-4 md:m-16
+    xl:flex xl:flex-row xl:space-x-10 xl:space-y-0">
 
-        <h3 class="font-[Saira] fixed text-white text-center font-light
-        xl:text-[20px] xl:top-96 xl:left-110
-        lg:text-[23px] lg:top-83 lg:left-40"
-        >Do i have consent to record this meeting gain location, root-and-<br>branch, review, nor game plan who’s the goto</h3>
-        <button class="text-white font-semibold font-[Saira] text-xl bg-white/40 backdrop-blur-md rounded-lg hover:bg-black/70 transition-colors
-        xl:fixed xl:top-[525px] xl:left-1/2 xl:-translate-x-1/2 xl:px-23 xl:py-5
-        lg:fixed lg:top-[440px] lg:left-[370px] lg:px-20 lg:py-4">
-            Shop Now
-        </button>
+    <li class="flex flex-col items-center text-base md:text-lg xl:text-xl">
+        <span class="text-4xl md:text-7xl xl:text-6xl font-bold">7</span>
+        Year Experience
+    </li>
+    <li class="flex flex-col items-center text-base md:text-lg xl:text-xl">
+        <span class="text-4xl md:text-7xl xl:text-6xl font-bold">2</span>
+        Opened in the country
+    </li>
+    <li class="flex flex-col items-center text-base md:text-lg xl:text-xl">
+        <span class="text-4xl md:text-7xl xl:text-6xl font-bold">10k+</span>
+        Furniture sold
+    </li>
+    <li class="flex flex-col items-center text-base md:text-lg xl:text-xl">
+        <span class="text-4xl md:text-7xl xl:text-6xl font-bold">260+</span>
+        Variant Furniture
+    </li>
+    </ul>
+      
+    <!-- White Gradient -->
+    <div class="relative">
+        <img src="./img/Rectangle 922.png" alt="gradiente branco"
+          class="fixed hidden
+                 md:top-[600px]
+                 lg:hidden
+                 xl:top-[720px] xl:right-0">
+      </div>
+  </main>
 
-        <div class= "bg-[#286F6C] text-white
-        xl:p-10 xl:rounded-[30px] xl:shadow-lg xl:w-300 xl:h-40 xl:z-20 xl:fixed xl:bottom-8 xl:left-1/2 xl:-translate-x-1/2 
-        lg:p-10 lg:rounded-[30px] lg:shadow-lg lg:w-200 lg:h-135 lg:z-20 lg:fixed lg:bottom-20 lg:left-30 lg:-translate-x-2">
-            <ul class="list-none items-center text-center text-1xl font-[Saira]
-            xl:space-x-35 xl:flex
-            lg:space-x-5 flex-column">
-                <li class = "xl:border-r-1 pr-18 pl-10">
-                   <span class = "text-4xl font-bold font-semibold"> 7 </span> <br> year experience</li>
-                <li class = "xl:border-r-1 pr-35 pl-0">
-                    <span class = "text-4xl font-bold font-semibold">2</span> <br> Opened in the country</li>
-                <li class = "xl:border-r-1 pr-20 pl-0">
-                    <span class = "text-4xl font-bold font-semibold">10k+</span> <br> Furniture sold</li>
-                <li class = "xl: pl-2 pr-6">
-                    <span class = "text-4xl font-bold font-semibold">260+</span> <br> Variant Furniture</li>
-            </ul>
-        </div>
-        <div class = "xl: relative">
-            <img src="./img/Pin.svg" class = "xl:fixed top-65 right-325" alt="ponto brilhante">
-            <img src="./img/Pin.svg" class = "xl:fixed top-150 right-318" alt="ponto brilhante">
-            <img src="./img/Pin.svg" class = "xl:fixed top-165 right-10" alt="ponto brilhante">
-        </div>
+  <!-- Footer -->
+  <footer>
+    <img src="./img/Rectangle 925 (1).png" alt="retângulo branco"
+      class="hidden xl:hidden lg:fixed lg:top-[750px]">
+  </footer>
 
-        <div class="relative">
-        <img src="./img/Rectangle 922.png" 
-        class="
-        xl:fixed xl:top-180 xl:right-0
-        lg:fixed lg:top-158 lg:z-19"
-        alt="gradiente branco">
-    </main>
-    
-    <footer>
-        <img src="./img/Rectangle 925 (1).png"
-        alt="retangulo branco"
-        class = 
-        "xl:hidden
-        lg:fixed lg:z-10 lg:top-190">
-    </footer>
 </body>
 </html>
