@@ -6,7 +6,9 @@ Este é um projeto de uma landing page responsiva feita com **HTML5** e **Tailwi
 
 ## Funcionalidades
 **- Responsivo:** Funciona em desktop, tablet e mobile.
+
 **- Estilo com Tailwind CSS:** Utilização de utilitários para layout, espaçamentos, fontes e efeitos.
+
 **- Design moderno:** Tipografia personalizada (Google Fonts), imagens de fundo, gradientes e mais.
 
 ---
